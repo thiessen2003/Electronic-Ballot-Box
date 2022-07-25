@@ -10,21 +10,26 @@ body {
     display: flex;
 }
 .tela {
-    width: 450px;
+    width: 500px;
     height: 320px;
     background: linear-gradient(to right, #E8E8E8, #C1C1C1);
+    border: 2px solid #555;
+    display: flex;
+    flex-direction: column;
     ;
 }
 .teclado {
     background-color: #403A3A;
     margin-left: 30px;
+
 }
 .teclado--linha {
     display: flex;
     justify-content: center;
+    align-items: flex-end;
 }
 .teclado--botao {
-    height: 30px;
+    height: 40px;
     width: 70px;
     background-color: #000000;
     color: #FFFFFF;
@@ -35,4 +40,37 @@ body {
     margin: 10px;
     cursor: pointer;
     box-shadow: 3px 3px 0px #555;
+}
+.botao--branco {
+    background-color: #fff;
+    color: #000;
+    font-size: 15px;
+}
+.botao--corrige {
+    background-color: #F09046;
+    color: #000;
+    font-size: 15px;
+}
+.botao--confirma {
+    background-color: #48c079;
+    color: #000;
+    font-size: 15px;
+    width: 80px;
+}
+
+
+.d-1 {
+    flex: 1;
+}
+.d-1-left {
+    flex: 1;
+}
+.d-1-right {
+    width: 90px;
+}
+.d-2 {
+    height: 50px; 
+    font-size: 14px;
+    border-top: 2px solid #000;
+    padding-left: 10px;
 }
